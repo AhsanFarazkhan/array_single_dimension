@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int arr1[5] = {2, 7, 9, 3, 6};
+    int arr2[5] = {3, 5, 7, 9, 10};
+
+    int i,k;
+    for(i=0;i<5;i++)
+    {
+
+        bool found=false;
+    for(k=0;k<5;k++)
+    {
+        if(arr1[i]==arr2[k])
+        {
+            found=true;
+            break;
+        }}
+        if(!found)
+        {
+            cout<<arr1[i];
+            cout<<endl;
+        }
+    }
+    }

@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+   int marks[5];
+    int i;
+    int index;
+int greatest;
+    for(i=0;i<5;i++)
+    {
+   cout<<"enter element in array "<<"marks["<<i<<"] :";
+    cin>>marks[i];
+    }
+
+        for(i=0;i<5;i++)
+    {
+
+       cout<<"array of "<<"marks["<<i<<"]"<<" is :"<<marks[i];
+       cout<<endl;
+}
+greatest=marks[0];
+    for(i=0;i<5;i++)
+    {
+if(marks[i]>greatest)
+{
+    greatest=marks[i];
+index=i;
+}
+
+    }
+    cout<<"the greatest element is :"<<greatest<<" which lies at the index of : mark["<<index<<"]";
+
+}

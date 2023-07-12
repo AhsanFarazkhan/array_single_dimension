@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int arr[10];
+            cout<<"enter elements of array :";
+    for(int k=0;k<10;k++)
+    {
+cin>>arr[k];
+    }
+    int original_array[10];
+    for(int k=0;k<10;k++)
+    {
+        original_array[k]=arr[k];
+    }
+
+    int midpoint=((sizeof(arr)/4)/2);
+    cout<<"midpoint is : "<<midpoint;
+    int loop1;
+    int loop2=(sizeof(arr)/4);
+    int temp;
+    for(loop1=0;loop1<midpoint;loop1++)
+    {
+        temp=arr[loop1];
+        arr[loop1]=arr[loop2-1];
+        arr[loop2-1]=temp;
+loop2--;
+    }
+    cout<<endl;
+ cout<<"checking for paladrom : ";
+    for(int i=0;i<sizeof(arr)/4;i++)
+    {
+
+ if(original_array[i]!=arr[i])
+ {
+     cout<<"not a palandrom";
+     return 1;
+ }
+
+
+    }
+    cout<<"palandrom";
+}
